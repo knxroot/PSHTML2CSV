@@ -18,9 +18,9 @@ Example:
 
 In Powershell
 ------
-    - Get-WmiObject Win32_PhysicalMemory -ComputerName $name  | select BankLabel,DeviceLocator,Capacity,Manufacturer,PartNumber,SerialNumber,Speed  | ConvertTo-html  -Body "<H2> Información de la memoria ram</H2>" >> "C:\PSHTML2CSV\in\mytest.html"
-    - Get-WmiObject Win32_Processor -ComputerName $name  | Select Name,Manufacturer,Caption,DeviceID,CurrentClockSpeed,CurrentVoltage,DataWidth,L2CacheSize,L3CacheSize,NumberOfCores,NumberOfLogicalProcessors,Status  | ConvertTo-html  -Body "<H2> Información de la CPU</H2>" >> "C:\PSHTML2CSV\in\mytest.html"
-    - cd C:\PSHTML2CSV\
-    - __npm install__
-    - __node report2csv.js__
+    Get-WmiObject Win32_PhysicalMemory -ComputerName $name  | select BankLabel,DeviceLocator,Capacity,Manufacturer,PartNumber,SerialNumber,Speed  | ConvertTo-html  -Body "<H2> Información de la memoria ram</H2>" >> "C:\PSHTML2CSV\in\mytest.html"
+    Get-WmiObject Win32_Processor -ComputerName $name  | Select Name,Manufacturer,Caption,DeviceID,CurrentClockSpeed,CurrentVoltage,DataWidth,L2CacheSize,L3CacheSize,NumberOfCores,NumberOfLogicalProcessors,Status  | ConvertTo-html  -Body "<H2> Información de la CPU</H2>" >> "C:\PSHTML2CSV\in\mytest.html"
+    cd C:\PSHTML2CSV\
+    __npm install__
+    __node report2csv.js__
 
